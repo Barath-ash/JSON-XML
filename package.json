@@ -1,0 +1,19 @@
+{
+  "name": "ass1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node app.js input.json output.xml",
+  "watch": "nodemon app.js input.json output.xml"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+,
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
