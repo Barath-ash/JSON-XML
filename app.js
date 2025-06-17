@@ -1,11 +1,11 @@
  import fs from 'fs';
 import convert from './convertor.js';
-
+ 
 const inputPath = 'input.json';
 const outputPath = 'output.xml';
 
  
- if(!inputPath || !outputPath){
+ if(!inputPath ){
     console.log("nothing exits")
     process.exit(1);
  }
@@ -15,6 +15,7 @@ const outputPath = 'output.xml';
     const jsondata = JSON.parse(jsontxt);
  
     const output = convert(jsondata);
+    
      fs.writeFileSync(outputPath,output,'utf-8');
 
    console.log("sucessfull vertri vertri");
